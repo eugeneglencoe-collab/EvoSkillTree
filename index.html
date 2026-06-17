@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EvoSkillTree</title>
+    <title>EvoSkillTree - Mon Arbre de Compétences</title>
     <link rel="icon" type="image/png" href="favicon.png">
-
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0f172a; /* Bleu très sombre moderne */
+        color: white;
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+      header {
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        font-weight: 700;
+        letter-spacing: -1px;
+      }
+      #canvas-container {
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #334155;
+      }
+      footer {
+        margin-top: auto;
+        padding: 20px;
+        font-size: 0.8rem;
+        color: #64748b;
+      }
+    </style>
   </head>
 
   <body>
-    <script src="sketch.js"></script>
+    <header>
+      <h1>EvoSkillTree</h1>
+      <p>Visualisez votre progression</p>
+    </header>
+
+    <div id="canvas-container">
+      <script src="sketch.js"></script>
+    </div>
+
+    <footer>
+      Propulsé par p5.js | Inspiré par le projet original
+    </footer>
   </body>
 </html>
