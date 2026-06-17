@@ -1,8 +1,42 @@
+/* Nettoyage de base */
 html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0f172a; /* Harmonisation avec le fond du HTML */
+  color: #f8fafc;
+  font-family: 'Inter', sans-serif;
 }
 
+/* S'assurer que le canvas est bien affiché */
 canvas {
   display: block;
+}
+
+/* Style du conteneur créé dans le HTML */
+#canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1e293b; /* Couleur de fond du bloc contenant l'arbre */
+}
+
+/* Amélioration du titre */
+header {
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
